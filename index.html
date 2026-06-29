@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>【宮崎市】美容室 Dear Silent Blaze hair&make | ディア サイレント ブレイズ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
       <button class="header__nav--close" type="button" aria-label="メニューを閉じる">
         <span>閉じる</span>
       </button>
-      <nav>
+      <nav class="gnav" aria-label="グローバルナビゲーション">
         <ul>
           <li>
             <a href="#" data-ja="ホーム" class="gnav__link">HOME</a>
@@ -58,8 +59,8 @@
     </section>
 
     <section class="concept">
-      <h2 data-ja="美容室について" data-en="CONCEPT">CONCEPT</h2>
-      <h3>会話なしで<br>静かに過ごせる美容室</h3>
+      <h2 class="concept__title" data-ja="美容室について" data-en="CONCEPT">CONCEPT</h2>
+      <h3 class="concept__subtitle">会話なしで<br>静かに過ごせる美容室</h3>
       <ul>
         <li>
           <img src="images/concept-img1.jpg" alt="サイレントルーム" width="1280" height="655">
@@ -68,15 +69,15 @@
           <img src="images/concept-img2.jpg" alt="通常ルーム" width="1280" height="655">
         </li>
       </ul>
-      <div>
-        <p>Dear Silent Blazeは「サイレントルーム」という会話なしの静かに過ごせる美容室を作りました。</p>
-        <p>最低限の会話のみで施術終わりまでお声掛け致しません。<br>サイレントルームはWi-Fi環境はもちろん、タブレット・各充電器も完備しております。 <br>映画・音楽・マンガ・雑誌も見放題です。<br></p>
-        <p>通常通り、会話ありのお部屋もございます。<br>どちらのお部屋も楽しんで頂けると思いますので、是非ご来店をお持ちしております。<br>自分だけのご褒美timeをお過ごしください。</p>
+      <div class="concept__body">
+        <p class="concept__text">Dear Silent Blazeは「サイレントルーム」という会話なしの静かに過ごせる美容室を作りました。</p>
+        <p class="concept__text">最低限の会話のみで施術終わりまでお声掛け致しません。<br>サイレントルームはWi-Fi環境はもちろん、タブレット・各充電器も完備しております。 <br>映画・音楽・マンガ・雑誌も見放題です。<br></p>
+        <p class="concept__text">通常通り、会話ありのお部屋もございます。<br>どちらのお部屋も楽しんで頂けると思いますので、是非ご来店をお持ちしております。<br>自分だけのご褒美timeをお過ごしください。</p>
       </div>
     </section>
     
     <section class="stylist">
-      <h2 data-ja="担当スタッフ" data-en="STYLIST">STYLIST</h2>
+      <h2 class="stylist__title" data-ja="担当スタッフ" data-en="STYLIST">STYLIST</h2>
       <img src="images/stylist-img.jpg" alt="オーナースタイリストの写真" width="474" height="644">
       <h3>河内屋 美佳子</h3>
       <p>オーナースタイリスト</p>
@@ -85,16 +86,16 @@
     </section>
 
     <section class="menu">
-      <h2 data-ja="施術内容と料金" data-en="MENU">MENU</h2>
-      <h3>安らぎと<br>お客様に合うメニューを</h3>
-      <img src="" alt="カット用のハサミとブラシとタオルの写真">
+      <h2 class="menu__title" data-ja="施術内容と料金" data-en="MENU">MENU</h2>
+      <h3 class="menu__subtitle">安らぎと<br>お客様に合うメニューを</h3>
+      <img src="images/menu-scissors.jpg" alt="カット用のハサミとブラシとタオルの写真" width="3000" height="2000">
       <p>高品質なヘアケア、癒しのヘッドスパで安らぎの時間を提供します。<br>パサつき・クセ・うねりを髪の毛の内部や頭皮から和らげ、美しさを追求します。</p>
       <a href="menu.html">VIEW MORE<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </section>
 
     <section class="access">
-      <h2 data-ja="店舗情報" data-en="ACCESS">ACCESS</h2>
-      <ul>
+      <h2 class="access__title" data-ja="店舗情報" data-en="ACCESS">ACCESS</h2>
+      <ul class="access__slider">
         <li>
           <img src="images/access-img1.jpg" alt="美容室の正面入口の写真" width="1280" height="655">
         </li>
@@ -102,14 +103,14 @@
           <img src="images/access-img2.jpg" alt="美容室の受付カウンターと待合スペースの写真" width="1280" height="655">
         </li>
       </ul>
-      <dl>
+      <dl class="access__info">
         <div>
           <dt>
             <span>Address</span><span>住所</span>
           </dt>
           <dd>
             宮崎県宮崎市村角町六反田386番地2
-            <a href="#" target="_blank" aria-label="Googleマップで開く">
+            <a href="https://maps.app.goo.gl/hbm52s5ttiKmzg5L9" target="_blank" aria-label="Googleマップで開く">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
             </a>
           </dd>
@@ -168,15 +169,55 @@
           </dd>
         </div>
       </dl>
-
       <div class="access__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13540.87879365103!2d131.443734!3d31.954936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538ba7780259c27%3A0xe7c6d6a97a3771e5!2sDear%20Silent%20Blaze%20Hair%26Make!5e0!3m2!1sja!2sjp!4v1782654413129!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Dear Silent Blazeのマップ"></iframe>
       </div>
     </section>
+
+    <section class="reserve">
+      <h2 class="reserve__title" data-ja="ご予約はこちら" data-en="RESERVE">RESERVE</h2>
+      <a href="https://beauty.hotpepper.jp/slnH000058847/">
+        <i class="fa-solid fa-scissors" aria-hidden="true"></i>HOT PEPPER Beautyで予約
+      </a>
+      <a href="tel:0985313513">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>0985-31-3513
+      </a>
+    </section>
   </main>
 
-  <footer>
-    
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <a href="index.html">
+          <img src="images/logo-dear-silent-blaze.png" alt="Dear Silent Blaze Hair&Makeのロゴ" width="500" height="500">
+        </a>
+      </div>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <ul>
+            <li>
+              <a href="#" data-ja="ホーム" class="gnav__link">HOME</a>
+            </li>
+            <li>
+              <a href="#" data-ja="美容室について" class="gnav__link">CONCEPT</a>
+            </li>
+            <li>
+              <a href="#" data-ja="美容師紹介" class="gnav__link">STYLIST</a>
+            </li>
+            <li>
+              <a href="#" data-ja="施術内容と料金" class="gnav__link">MENU</a>
+            </li>
+            <li>
+              <a href="#" data-ja="店舗情報" class="gnav__link">ACCESS</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="https://www.instagram.com/blaze2004810/" target="_blank" aria-label="インスタグラムを開く">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <p>
+      <small>&copy; 2026 Dear Silent Blaze hair&make</small>
+    </p>
   </footer>
 </body>
 </html>
