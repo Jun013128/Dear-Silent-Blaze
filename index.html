@@ -6,6 +6,7 @@
   <title>【宮崎市】美容室 Dear Silent Blaze hair&make | ディア サイレント ブレイズ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,21 +24,21 @@
         <span>閉じる</span>
       </button>
       <nav class="gnav" aria-label="グローバルナビゲーション">
-        <ul>
-          <li>
-            <a href="#" data-ja="ホーム" class="gnav__link">HOME</a>
+        <ul class="gnav__list">
+          <li class="gnav__item">
+            <a href="index.html" class="gnav__link">HOME<span>ホーム</span></a>
           </li>
           <li>
-            <a href="#" data-ja="美容室について" class="gnav__link">CONCEPT</a>
+            <a href="#concept" class="gnav__link">CONCEPT<span>美容室について</span></a>
           </li>
           <li>
-            <a href="#" data-ja="美容師紹介" class="gnav__link">STYLIST</a>
+            <a href="#stylist" class="gnav__link">STYLIST<span>担当スタッフ</span></a>
           </li>
           <li>
-            <a href="#" data-ja="施術内容と料金" class="gnav__link">MENU</a>
+            <a href="menu.html" class="gnav__link">MENU<span>施術内容と料金</span></a>
           </li>
           <li>
-            <a href="#" data-ja="店舗情報" class="gnav__link">ACCESS</a>
+            <a href="#access" class="gnav__link">ACCESS<span>店舗情報</span></a>
           </li>
         </ul>
       </nav>
@@ -58,8 +59,8 @@
       </div>
     </section>
 
-    <section class="concept">
-      <h2 class="concept__title" data-ja="美容室について" data-en="CONCEPT">CONCEPT</h2>
+    <section class="section concept" id="concept">
+      <h2 class="section-header section-header--left" data-en="CONCEPT">CONCEPT<span>美容室について</span></h2>
       <h3 class="concept__subtitle">会話なしで<br>静かに過ごせる美容室</h3>
       <ul>
         <li>
@@ -76,8 +77,8 @@
       </div>
     </section>
     
-    <section class="stylist">
-      <h2 class="stylist__title" data-ja="担当スタッフ" data-en="STYLIST">STYLIST</h2>
+    <section class="section stylist" id="stylist">
+      <h2 class="section-header section-header--center" data-en="STYLIST">STYLIST<span>担当スタッフ</span></h2>
       <img src="images/stylist-img.jpg" alt="オーナースタイリストの写真" width="474" height="644">
       <h3>河内屋 美佳子</h3>
       <p>オーナースタイリスト</p>
@@ -85,16 +86,16 @@
       <p>サイレントルーム専属のスタッフもおります。 どんな髪色にしたいか分からない方、ぜひスタッフにご相談ください。</p>
     </section>
 
-    <section class="menu">
-      <h2 class="menu__title" data-ja="施術内容と料金" data-en="MENU">MENU</h2>
+    <section class="section menu">
+      <h2 class="section-header section-header--left" data-en="MENU">MENU<span>施術内容と料金</span></h2>
       <h3 class="menu__subtitle">安らぎと<br>お客様に合うメニューを</h3>
       <img src="images/menu-scissors.jpg" alt="カット用のハサミとブラシとタオルの写真" width="3000" height="2000">
       <p>高品質なヘアケア、癒しのヘッドスパで安らぎの時間を提供します。<br>パサつき・クセ・うねりを髪の毛の内部や頭皮から和らげ、美しさを追求します。</p>
       <a href="menu.html">VIEW MORE<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </section>
 
-    <section class="access">
-      <h2 class="access__title" data-ja="店舗情報" data-en="ACCESS">ACCESS</h2>
+    <section class="section access" id="access">
+      <h2 class="section-header section-header--left" data-en="ACCESS">ACCESS<span>店舗情報</span></h2>
       <ul class="access__slider">
         <li>
           <img src="images/access-img1.jpg" alt="美容室の正面入口の写真" width="1280" height="655">
@@ -174,14 +175,16 @@
       </div>
     </section>
 
-    <section class="reserve">
-      <h2 class="reserve__title" data-ja="ご予約はこちら" data-en="RESERVE">RESERVE</h2>
-      <a href="https://beauty.hotpepper.jp/slnH000058847/">
-        <i class="fa-solid fa-scissors" aria-hidden="true"></i>HOT PEPPER Beautyで予約
-      </a>
-      <a href="tel:0985313513">
-        <i class="fa-solid fa-phone" aria-hidden="true"></i>0985-31-3513
-      </a>
+    <section class="section reserve">
+      <h2 class="section-header section-header--center" data-en="RESERVE">RESERVE<span>ご予約はこちら</span></h2>
+      <div class="reserve__btn">
+        <a href="https://beauty.hotpepper.jp/slnH000058847/">
+          <i class="fa-solid fa-scissors" aria-hidden="true"></i>HOT PEPPER Beautyで予約
+        </a>
+        <a href="tel:0985313513">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>0985-31-3513
+        </a>
+      </div>
     </section>
   </main>
 
@@ -193,21 +196,21 @@
         </a>
       </div>
       <nav class="footer__nav" aria-label="フッターナビゲーション">
-          <ul>
-            <li>
-              <a href="#" data-ja="ホーム" class="gnav__link">HOME</a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">HOME</a>
             </li>
-            <li>
-              <a href="#" data-ja="美容室について" class="gnav__link">CONCEPT</a>
+            <li class="footer__item">
+              <a href="#concept" class="footer__link">CONCEPT</a>
             </li>
-            <li>
-              <a href="#" data-ja="美容師紹介" class="gnav__link">STYLIST</a>
+            <li class="footer__item">
+              <a href="#stylist" class="footer__link">STYLIST</a>
             </li>
-            <li>
-              <a href="#" data-ja="施術内容と料金" class="gnav__link">MENU</a>
+            <li class="footer__item">
+              <a href="menu.html" class="footer__link">MENU</a>
             </li>
-            <li>
-              <a href="#" data-ja="店舗情報" class="gnav__link">ACCESS</a>
+            <li class="footer__item">
+              <a href="#access" class="footer__link">ACCESS</a>
             </li>
           </ul>
         </nav>
