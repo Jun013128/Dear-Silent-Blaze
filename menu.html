@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>【宮崎市】美容室 Dear Silent Blaze hair&make | ディア サイレント ブレイズ</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header class="header">
     <div class="header__logo">
       <a href="index.html">
-        <img src="images/logo-dear-silent-blaze.png" alt="Dear Silent Blaze hair&makeのロゴ" width="500" height="500">
+        <img class="header__logo-img" src="images/logo-dear-silent-blaze.png" alt="Dear Silent Blaze hair&makeのロゴ" width="500" height="500">
       </a>
     </div>
     <button class="header__hamburger" type="button" aria-label="メニューを開く">
@@ -50,193 +46,193 @@
   </header>
 
   <main>
-    <section class="menu-page">
+    <section class="section">
       <h1 class="section-header section-header--center">MENU<span>施術内容と料金</span></h1>
-      <nav aria-label="カテゴリー絞り込み">
+      <nav class="menu-nav" aria-label="カテゴリー絞り込み">
         <details open>
-          <summary>
+          <summary class="menu-filter">
             <i class="fa-solid fa-filter"></i>カテゴリーで絞り込む<i class="fa-solid fa-chevron-up"></i>
           </summary>
-          <ul>
-            <li>
-              <button type="button">ALL<span>すべて</span></button>
+          <ul class="cat-list">
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="all">ALL<span>すべて</span></button>
             </li>
-            <li>
-              <button type="button">CUT<span>カット</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="cut">CUT<span>カット</span></button>
             </li>
-            <li>
-              <button type="button">COLOR<span>カラー</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="color">COLOR<span>カラー</span></button>
             </li>
-            <li>
-              <button type="button">PERM<span>パーマ</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="perm">PERM<span>パーマ</span></button>
             </li>
-            <li>
-              <button type="button">STRAIGHT<span>縮毛矯正</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="straight">STRAIGHT<span>縮毛矯正</span></button>
             </li>
-            <li>
-              <button type="button">TREATMENT<span>トリートメント</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="treatment">TREATMENT<span>トリートメント</span></button>
             </li>
-            <li>
-              <button type="button">HAIR SET<span>ヘアセット</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="hairset">HAIR SET<span>ヘアセット</span></button>
             </li>
-            <li>
-              <button type="button">HEAD SPA<span>ヘッドスパ</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="headspa">HEAD SPA<span>ヘッドスパ</span></button>
             </li>
-            <li>
-              <button type="button">OTHER<span>その他</span></button>
+            <li class="cat-list__item">
+              <button class="cat-list__btn is-active" type="button" data-filter="other">OTHER<span>その他</span></button>
             </li>
           </ul>
         </details>
       </nav>
+    </section>
 
-      <section>
-        <h2>CUT<span>カット</span></h2>
-        <ul>
-          <li>
-            <span>カット（一般）<span>&yen;4,500</span></span>
-            <div>
-              <p>シャンプー・ブロー込みの価格となっております。</p>
-              <ol>
-                <li>炭酸シャンプー</li>
-                <li>頭皮ケアパック</li>
-                <li>ヘアトリートメント</li>
-              </ol>
-              <p>この3つから選べます。</p>
-            </div>
-          </li>
-          <li>
-            <span>カット（高校生）<span>&yen;2,800</span></span>
+    <section class="section" data-category="cut">
+      <h2 class="menu-title">CUT<span>カット</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>カット（一般）<span>&yen;4,500</span></span>
+          <div>
             <p>シャンプー・ブロー込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>カット（中学生）<span>&yen;2,700</span></span>
-            <p>シャンプー・ブロー込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>カット（小学生、幼児）<span>&yen;2,600</span></span>
-            <p>シャンプー・ブロー込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>前髪カット<span>&yen;950</span></span>
-          </li>
-          <li>
-            <span>カット（カラー通常時やトリートメントなどの時）のオプションメニュー<span>&yen;3,400</span></span>
-            <p>オプションメニューです。<br>シャンプーブローは入っておりません。</p>
-          </li>
-        </ul>
-      </section>
+            <ol>
+              <li>炭酸シャンプー</li>
+              <li>頭皮ケアパック</li>
+              <li>ヘアトリートメント</li>
+            </ol>
+            <p>この3つから選べます。</p>
+          </div>
+        </li>
+        <li class="menu-list__item">
+          <span>カット（高校生）<span>&yen;2,800</span></span>
+          <p>シャンプー・ブロー込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>カット（中学生）<span>&yen;2,700</span></span>
+          <p>シャンプー・ブロー込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>カット（小学生、幼児）<span>&yen;2,600</span></span>
+          <p>シャンプー・ブロー込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>前髪カット<span>&yen;950</span></span>
+        </li>
+        <li class="menu-list__item">
+          <span>カット（カラー通常時やトリートメントなどの時）のオプションメニュー<span>&yen;3,400</span></span>
+          <p>オプションメニューです。<br>シャンプーブローは入っておりません。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>COLOR<span>カラー</span></h2>
-        <ul>
-          <li>
-            <span>グレイカラー<span>&yen;6,600～</span></span>
-            <p>シャンプー・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>ウィービング<span>&yen;8,500～</span></span>
-            <p>シャンプー・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="color">
+      <h2 class="menu-title">COLOR<span>カラー</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>グレイカラー<span>&yen;6,600～</span></span>
+          <p>シャンプー・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>ウィービング<span>&yen;8,500～</span></span>
+          <p>シャンプー・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>PERM<span>パーマ</span></h2>
-        <ul>
-          <li>
-            <span>フローラルウェーブ<span>&yen;9,500～</span></span>
-            <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>うるうるウォーターパーマ<span>&yen;10,500～</span></span>
-            <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>形状記憶パーマ<span>&yen;16,000～</span></span>
-            <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="perm">
+      <h2 class="menu-title">PERM<span>パーマ</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>フローラルウェーブ<span>&yen;9,500～</span></span>
+          <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>うるうるウォーターパーマ<span>&yen;10,500～</span></span>
+          <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>形状記憶パーマ<span>&yen;16,000～</span></span>
+          <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>STRAIGHT<span>縮毛矯正</span></h2>
-        <ul>
-          <li>
-            <span>縮毛矯正ストレート<span>&yen;14,500～</span></span>
-            <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>エンジェルリングストレート<span>&yen;16,940～</span></span>
-            <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>前髪ストレート<span>&yen;6,900～</span></span>
-            <p>シャンプー・前カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-          <li>
-            <span>ツヤキラ酸性ストレート<span>&yen;15,500～</span></span>
-            <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="straight">
+      <h2 class="menu-title">STRAIGHT<span>縮毛矯正</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>縮毛矯正ストレート<span>&yen;14,500～</span></span>
+          <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>エンジェルリングストレート<span>&yen;16,940～</span></span>
+          <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>前髪ストレート<span>&yen;6,900～</span></span>
+          <p>シャンプー・前カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>ツヤキラ酸性ストレート<span>&yen;15,500～</span></span>
+          <p>シャンプー・カット・ブロー・トリートメント込みの価格となっております。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>TREATMENT<span>トリートメント</span></h2>
-        <ul>
-          <li>
-            <span>うるうるウォーター<span>&yen;1,800</span></span>
-            <p>パーマやカラーの追加メニューでご利用ください。</p>
-          </li>
-          <li>
-            <span>UruKiraトリートメント<span>&yen;7,000～</span></span>
-            <p>ブリーチなどで傷んだ髪を修復する、人気ブランドN.のトリートメントです。</p>
-          </li>
-          <li>
-            <span>毛髪改善ハリスノフ<span>&yen;30,000</span></span>
-            <p>パサついて広がりやすい髪やくせ毛や傷んだ髪のまとまりを良くして、自然な美髪に髪質改善ができます。</p>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="treatment">
+      <h2 class="menu-title">TREATMENT<span>トリートメント</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>うるうるウォーター<span>&yen;1,800</span></span>
+          <p>パーマやカラーの追加メニューでご利用ください。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>UruKiraトリートメント<span>&yen;7,000～</span></span>
+          <p>ブリーチなどで傷んだ髪を修復する、人気ブランドN.のトリートメントです。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>毛髪改善ハリスノフ<span>&yen;30,000</span></span>
+          <p>パサついて広がりやすい髪やくせ毛や傷んだ髪のまとまりを良くして、自然な美髪に髪質改善ができます。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>HAIR SET<span>ヘアセット</span></h2>
-        <ul>
-          <li>
-            <span>セット<span>&yen;4,000</span></span>
-            <p>ネット予約対象外です。</p>
-          </li>
-          <li>
-            <span>ハーフアップ<span>&yen;3,800</span></span>
-            <p>ネット予約対象外です。</p>
-          </li>
-          <li>
-            <span>アイロンカール<span>&yen;2,800</span></span>
-            <p>ネット予約対象外です。</p>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="hairset">
+      <h2 class="menu-title">HAIR SET<span>ヘアセット</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>セット<span>&yen;4,000</span></span>
+          <p>ネット予約対象外です。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>ハーフアップ<span>&yen;3,800</span></span>
+          <p>ネット予約対象外です。</p>
+        </li>
+        <li class="menu-list__item">
+          <span>アイロンカール<span>&yen;2,800</span></span>
+          <p>ネット予約対象外です。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>HEAD SPA<span>ヘッドスパ</span></h2>
-        <ul>
-          <li>
-            <span>ヘッドスパ（他のメニューと併用）<span>&yen;2,500</span></span>
-          </li>
-          <li>
-            <span>ヘッドスパ（ヘッドスパのみ）<span>&yen;5,000</span></span>
-            <p>シャンプー・ブロー込み。</p>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="headspa">
+      <h2 class="menu-title">HEAD SPA<span>ヘッドスパ</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>ヘッドスパ（他のメニューと併用）<span>&yen;2,500</span></span>
+        </li>
+        <li class="menu-list__item">
+          <span>ヘッドスパ（ヘッドスパのみ）<span>&yen;5,000</span></span>
+          <p>シャンプー・ブロー込み。</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>OTHER<span>その他</span></h2>
-        <ul>
-          <li>
-            <span>シャンプー&ブロー<span>&yen;2,880</span></span>
-          </li>
-        </ul>
-      </section>
+    <section class="section" data-category="other">
+      <h2 class="menu-title">OTHER<span>その他</span></h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <span>シャンプー&ブロー<span>&yen;2,880</span></span>
+        </li>
+      </ul>
     </section>
 
     <section class="section reserve">

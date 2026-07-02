@@ -1,7 +1,23 @@
 :root {
+  /* カラー */
   --color-base: #FBFBFB;
   --color-text: #333333;
-  --color-main: #F4E1C1;
+  --color-primary: #F4E1C1;
   --color-gradation: linear-gradient(to bottom, #C09756, #D7B886, #F4E1C1);
   --color-accent: #FF3131;
+  --color-surface: #fff;
+  
+  /* フォント */
+  --font-en: 'Cormorant Garamond', serif;
+  --font-ja: 'Noto Sans JP', sans-serif;
+
+  /* フォントサイズ */
+  --font-xs: .625rem;
+  --font-s: .75rem;
+  --font-m: 1rem;
+  --font-l: 1.5rem;
+  --font-xl: 2rem;
+
+  /* ヘッダー */
+  --header-height: 80px;
 }
