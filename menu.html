@@ -4,46 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>【宮崎市】美容室 Dear Silent Blaze hair&make | ディア サイレント ブレイズ</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
   <header class="header">
     <div class="header__logo">
       <a href="index.html">
-        <img class="header__logo-img" src="images/logo-dear-silent-blaze.png" alt="Dear Silent Blaze hair&makeのロゴ" width="500" height="500">
+        <img class="header__logo-img" src="images/logo-dear-silent-blaze.png" alt="Dear Silent Blaze hair&makeのロゴ"
+          width="500" height="500">
       </a>
     </div>
-    <button class="header__hamburger" type="button" aria-label="メニューを開く">
-      <span>メニュー</span>
+    <button id="header__btn-open" class="header__btn-open" type="button" aria-label="メニューを開く">
+      <img class="header__btn-icon" src="images/icon-cut-close.svg" alt="" width="40" height="40">
+      <span class="header__btn-label font-s">MENU</span>
     </button>
-    <dialog class="header__nav" aria-label="メニュー">
-      <button class="header__nav--close" type="button" aria-label="メニューを閉じる">
-        <span>閉じる</span>
-      </button>
-      <nav class="gnav" aria-label="グローバルナビゲーション">
-        <ul class="gnav__list">
-          <li class="gnav__item">
-            <a href="index.html" class="gnav__link">HOME<span>ホーム</span></a>
-          </li>
-          <li>
-            <a href="index.html#concept" class="gnav__link">CONCEPT<span>美容室について</span></a>
-          </li>
-          <li>
-            <a href="index.html#stylist" class="gnav__link">STYLIST<span>担当スタッフ</span></a>
-          </li>
-          <li>
-            <a href="menu.html" class="gnav__link">MENU<span>施術内容と料金</span></a>
-          </li>
-          <li>
-            <a href="index.html#access" class="gnav__link">ACCESS<span>店舗情報</span></a>
-          </li>
-        </ul>
-      </nav>
-    </dialog>
   </header>
+  <dialog id="header__nav" class="header__nav" aria-label="メニュー">
+    <header class="menu-header">
+      <button id="header__btn-close" class="header__btn-close" type="button" aria-label="メニューを閉じる">
+        <img class="header__btn-icon" src="images/icon-cut-open.svg" alt="" width="40" height="40">
+        <span class="header__btn-label font-s">CLOSE</span>
+      </button>
+    </header>
+    <nav class="gnav" aria-label="グローバルナビゲーション">
+      <ul class="gnav__list">
+        <li class="gnav__item">
+          <a href="index.html" class="gnav__link">HOME<span class="font-ja font-s">ホーム</span></a>
+        </li>
+        <li class="gnav__item">
+          <a href="index.html#concept" class="gnav__link">CONCEPT<span class="font-ja font-s">美容室について</span></a>
+        </li>
+        <li class="gnav__item">
+          <a href="index.html#stylist" class="gnav__link">STYLIST<span class="font-ja font-s">担当スタッフ</span></a>
+        </li>
+        <li class="gnav__item">
+          <a href="menu.html" class="gnav__link">MENU<span class="font-ja font-s">施術内容と料金</span></a>
+        </li>
+        <li class="gnav__item">
+          <a href="index.html#access" class="gnav__link">ACCESS<span class="font-ja font-s">店舗情報</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="reserve-btn-wrap">
+      <a href="https://beauty.hotpepper.jp/slnH000058847/" class="reserve-btn font-sm" target="_blank">
+        <i class="fa-solid fa-scissors" aria-hidden="true"></i>HOT PEPPER Beautyで予約
+      </a>
+      <a href="tel:0985313513" class="phone-btn font-sm">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>0985-31-3513
+      </a>
+    </div>
+  </dialog>
 
   <main>
     <section class="section">
@@ -237,11 +257,11 @@
 
     <section class="section reserve">
       <h2 class="section-header section-header--center" data-en="RESERVE">RESERVE<span>ご予約はこちら</span></h2>
-      <div class="reserve__btn">
-        <a href="https://beauty.hotpepper.jp/slnH000058847/">
+      <div class="reserve-btn-wrap">
+        <a href="https://beauty.hotpepper.jp/slnH000058847/" class="reserve-btn" target="_blank">
           <i class="fa-solid fa-scissors" aria-hidden="true"></i>HOT PEPPER Beautyで予約
         </a>
-        <a href="tel:0985313513">
+        <a href="tel:0985313513" class="phone-btn">
           <i class="fa-solid fa-phone" aria-hidden="true"></i>0985-31-3513
         </a>
       </div>

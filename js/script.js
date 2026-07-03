@@ -1,7 +1,7 @@
 const
 menu = document.querySelector("#header__nav"),
-buttonOpen = document.querySelector("#header__btn--open"),
-buttonClose = document.querySelector("#header__btn--close");
+buttonOpen = document.querySelector("#header__btn-open"),
+buttonClose = document.querySelector("#header__btn-close");
 
 
 
