@@ -22,6 +22,7 @@ p,dl {
   color: var(--color-text-sub);
   font-family: var(--font-base);
   font-weight: 400;
+  letter-spacing: .1em;
 }
 
 .font-s {
@@ -63,7 +64,8 @@ p,dl {
   height: auto;
 }
 
-.header__btn-open {
+.header__btn-open,
+.header__btn-close {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +73,12 @@ p,dl {
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.header__btn-open:active,
+.header__btn-close:active {
+  transform: translateY(3px);
 }
 
 .header__btn-icon {
@@ -82,16 +90,6 @@ p,dl {
   font-family: var(--font-en);
   font-weight: 700;
   letter-spacing: .1em;
-}
-
-.header__btn-close {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
 }
 
 .header__nav {
@@ -368,11 +366,10 @@ main {
   margin: 0 0 2.5rem;
 }
 
-.section-header--left::before {
+.section-header::before {
   content: attr(data-en);
   position: absolute;
   top: -35px;
-  left: -4vw;
   font-size: 64px;
   pointer-events: none;
   color: transparent;
@@ -382,47 +379,39 @@ main {
   paint-order: stroke fill;
   white-space: nowrap;
   z-index: 0;
+}
+
+.section-header--left::before {
+  left: -4vw;
 }
 
 .section-header--center {
   align-items: center;
 }
 
-.section-header--center::before {
-  content: attr(data-en);
-  position: absolute;
-  top: -35px;
-  font-size: 64px;
-  pointer-events: none;
-  color: transparent;
-  opacity: 0.2;
-  -webkit-text-stroke: 1px var(--color-text);
-  text-stroke: 1px var(--color-text);
-  paint-order: stroke fill;
-  white-space: nowrap;
-  z-index: 0;
-}
-
 .section-subtitle {
   font-size: var(--font-ml);
+  letter-spacing: .1em;
   margin: 0 0 2.5rem;
 }
 
 .concept__imgs {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin: 0 0 2.5rem;
+  gap: 10vw;
+  margin: 0 0 10vw;
   padding: 0;
   list-style: none;
 }
 
 .concept__img-item:nth-child(1) {
-  padding-right: 16%;
+  margin: 0 16% 0 0;
+  box-shadow: 4vw 4vw var(--color-primary);
 }
 
 .concept__img-item:nth-child(2) {
-  padding-left: 16%;
+  margin: 0 0 0 16%;
+  box-shadow: -4vw 4vw var(--color-primary);
 }
 
 .concept__img {
@@ -472,13 +461,14 @@ main {
 .menu__wrap {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 10vw;
   margin: 0 0 2.5rem;
 }
 
 .menu__img {
   height: auto;
-  padding-left: 16%;
+  margin: 0 0 0 5vw;
+  box-shadow: -4vw 4vw var(--color-primary);
 }
 
 .more-btn {
@@ -514,6 +504,11 @@ main {
   border-right: 1px solid var(--color-text);
   border-bottom: 1px solid var(--color-text);
   transform: skew(45deg);
+  transition: transform 0.2s ease;
+}
+
+.more-btn__link:active .arrow-right {
+  transform: skew(45deg) translateX(5px);
 }
 
 .access__splide {
@@ -619,6 +614,7 @@ main {
   color: var(--color-base);
   text-decoration: none;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s ease;
 }
 
 .reserve-btn-wrap i {
@@ -634,6 +630,13 @@ main {
   text-decoration: none;
   border: 1px solid var(--color-accent);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s ease;
+}
+
+.reserve-btn:active,
+.phone-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* footer */
@@ -744,4 +747,49 @@ main {
   align-items: center;
   font-family: var(--font-en);
   font-size: var(--font-lg);
+  letter-spacing: .1em;
+  margin: 0 0 2.5rem;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 2.5rem 4vw;
+  background: var(--color-surface);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem 0;
+  font-weight: 700;
+}
+
+.menu-list__item:not(:last-child) {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.menu-list__label {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list__label::after {
+  content: "";
+  flex-grow: 1;
+  border-bottom: 1px dashed var(--color-primary);
+  order: 1;
+  margin: 0 1rem;
+}
+
+.menu-list__price {
+  order: 2;
+}
+
+
+/* PC */
+
+.more-btn__link:hover .arrow-right {
+  transform: skew(45deg) translateX(5px);
 }

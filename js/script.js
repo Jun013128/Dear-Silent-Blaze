@@ -14,11 +14,15 @@ menuCategories = document.querySelectorAll("[data-category]");
 
 buttonOpen.addEventListener("click", () => {
   // モーダルとしてひらく
-  menu.showModal();
+  setTimeout(() => {
+    menu.showModal();
+  }, 100);
 });
 buttonClose.addEventListener("click", () => {
   // メニューをとじる
-  menu.close();
+  setTimeout(() => {
+    menu.close();
+  }, 100);
 });
 
 menu.addEventListener("click", (event) => {
@@ -136,3 +140,6 @@ if (filterBtns.length > 0) {
   });
 
 }
+
+// スクロールフェードイン
+
