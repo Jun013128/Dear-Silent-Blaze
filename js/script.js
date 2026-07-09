@@ -7,7 +7,9 @@ fvTop = document.querySelector(".fv__top"),
 fvBottom = document.querySelector(".fv__bottom"),
 mainSlider = document.querySelector("#main-slider"),
 filterBtns = document.querySelectorAll(".cat-list__btn"),
-menuCategories = document.querySelectorAll("[data-category]");
+menuCategories = document.querySelectorAll("[data-category]"),
+fadeElems = document.querySelectorAll(".fade-in, .fade-in--left, .fade-in--right"),
+countBadge = document.querySelector(".filter-count");
 
 
 // ハンバーガーメニュー
@@ -136,10 +138,55 @@ if (filterBtns.length > 0) {
           category.hidden = !activeFilters.has(category.dataset.category);
         }
       });
+
+      if (countBadge) {
+        if (activeFilters.has("all")) {
+          countBadge.textContent = "ALL";
+        } else {
+          countBadge.textContent = `${activeFilters.size} 選択中`;
+        }
+      }
+
     });
   });
-
 }
 
 // スクロールフェードイン
 
+if (fadeElems.length > 0) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -30% 0px"
+  });
+
+  fadeElems.forEach(elem => observer.observe(elem));
+}
+
+// レスポンシブ
+const mq = window.matchMedia("(min-width: 768px)");
+const gnav = document.querySelector(".gnav");
+const reserveBtnWrap = document.querySelector(".header__nav .reserve-btn-wrap");
+const sidebar = document.querySelector(".sidebar");
+
+function handleLayout(e) {
+  if (e.matches) {
+    // タブレット以上：sidebarに移動
+    sidebar.appendChild(gnav);
+    sidebar.appendChild(reserveBtnWrap);
+  } else {
+    // SP：dialogに戻す
+    const headerNav = document.querySelector(".header__nav");
+    headerNav.appendChild(gnav);
+    headerNav.appendChild(reserveBtnWrap);
+  }
+}
+
+mq.addEventListener("change", handleLayout);
+handleLayout(mq); // 初期実行
