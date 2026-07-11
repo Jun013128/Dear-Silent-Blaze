@@ -301,6 +301,7 @@ main {
 .fv__title--red {
   color: var(--color-accent);
   font-size: 80px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
 }
 
 .scroll {
@@ -599,7 +600,7 @@ main {
   align-items: baseline;
 }
 
-.fa-location-dot {
+.map-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -607,9 +608,10 @@ main {
   background: var(--color-accent);
   width: 30px;
   height: 30px;
-  padding: 8px;
   margin: 0 0 0 .25rem;
   border-radius: 50%;
+  text-decoration: none;
+  letter-spacing: normal;
 }
 
 .access__note {
@@ -739,6 +741,7 @@ main {
   border-radius: 8px;
   gap: 0.5rem;
   margin: 0 0 .5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .menu-filter__arrow {
@@ -761,6 +764,7 @@ details[open] .menu-filter__arrow {
   background: var(--color-surface);
   border: 1px solid var(--color-text);
   border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .menu-nav details::details-content {
