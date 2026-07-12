@@ -66,7 +66,7 @@ p,dl {
 
 .fade-in--left {
   opacity: 0;
-  translate: -1.875rem 0;
+  translate: -30px 0;
   transition:
     opacity 1s ease,
     translate .6s ease;
@@ -74,7 +74,7 @@ p,dl {
 
 .fade-in--right {
   opacity: 0;
-  translate: 1.875rem 0;
+  translate: 30px 0;
   transition:
     opacity 1s ease,
     translate .6s ease;
@@ -194,7 +194,7 @@ p,dl {
 }
 
 .gnav {
-  margin: 10vw 0;
+  margin: 2.5rem 0;
   padding: 0 5vw;
 }
 
@@ -221,7 +221,7 @@ p,dl {
   font-family: var(--font-en);
   font-weight: 700;
   letter-spacing: .1em;
-  padding: 16px 0;
+  padding: 1rem 0;
 }
 
 /* main */
@@ -279,7 +279,7 @@ main {
 .fv__title {
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: var(--font-l);
   font-weight: 700;
   letter-spacing: .1em;
 }
@@ -300,7 +300,7 @@ main {
 
 .fv__title--red {
   color: var(--color-accent);
-  font-size: 80px;
+  font-size: 5rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
 }
 
@@ -415,7 +415,7 @@ main {
   content: attr(data-en);
   position: absolute;
   top: -35px;
-  font-size: 64px;
+  font-size: 4rem;
   pointer-events: none;
   color: transparent;
   opacity: 0.2;
@@ -534,7 +534,7 @@ main {
   font-weight: 500;
   letter-spacing: .1em;
   border-bottom: 1px solid var(--color-accent);
-  padding: 8px 8px;
+  padding: .5rem;
   position: relative;
 }
 
@@ -649,7 +649,7 @@ main {
   text-align: center;
   gap: 32px;
   font-weight: 700;
-  letter-spacing: .05rem;
+  letter-spacing: .05em;
 }
 
 .reserve-btn {
@@ -905,7 +905,6 @@ details[open] .menu-filter__arrow {
 
   .gnav {
     width: 100%;
-    margin: 4vw 0;
     padding: 0;
   }
   
